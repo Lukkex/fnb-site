@@ -139,6 +139,12 @@ h5 {
 
 /** END OF HEADERS **/
 
+.svg {
+	min-width: 50px;
+	width: 15vw;
+	height: auto;
+}
+
 .accent-text {
     background: linear-gradient(var(--accent-gradient));
     -webkit-background-clip: text;
