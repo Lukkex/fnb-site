@@ -29,6 +29,137 @@
 
 /** FONTS **/
 
+
+/** END OF FONTS **/
+
+/** BACKGROUNDS **/
+
+
+/** END OF BACKGROUNDS **/
+
+/** ANIMATIONS **/
+
+
+/** END OF ANIMATIONS **/
+
+/** BODY & MAIN **/
+
+body {
+	font-family: "monospace";
+	font-weight: 0;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background-color: black;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color: rgb(var(--white));
+	font-size: 25px;
+	line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+	body {
+		font-family: monospace;
+	}
+}
+
+main {
+	width: 720px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 3em 1em;
+}
+
+/** END OF BODY & MAIN **/
+
+/** HEADERS **/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5rem 0;
+	color: rgb(var(--accent));
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 3.052em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.441em;
+}
+
+h3 {
+	font-size: 1.953em;
+}
+
+h4 {
+	font-size: 1.563em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+/** END OF HEADERS **/
+
+
+strong,
+b {
+	font-weight: 700;
+}
+
+a {
+	color: var(--accent);
+}
+
+a:hover {
+	color: var(--accent);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.smaller-image {
+	width: 12vw;
+	height: auto;
+}
+
+.large-image {
+	min-width: 200px;
+	width: 20vw;
+	height: auto;
+}
+
+.logo-large {
+	width: 5vw;
+	height: auto;
+}
+
+.logo {
+	width: 2vw;
+	height: auto;
+}
+
+.indent {
+	padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+/** PREVIOUS CODE FOR GUIDE **/
+
+/**
 @font-face {
 	font-family: 'Cyber';
 	src: url('/fonts/CyberMegico-BLOMd.otf') format('opentype');
@@ -42,11 +173,10 @@
 	font-style: normal;
 	font-display: swap;
 }
+**/
 
-/** END OF FONTS **/
 
-/** BACKGROUNDS **/
-
+/**
 .hueChanging {
 	animation: hueChange 180s linear infinite;
 }
@@ -74,10 +204,9 @@
 		animation: hueChange 180s linear infinite;
 	}
 }
+**/
 
-/** END OF BACKGROUNDS **/
-
-
+/**
 .centering-container {
 	display: flex;
 	justify-content: center;
@@ -113,195 +242,10 @@
 
 @keyframes hueChange {
 		0% {
-			filter: hue-rotate(0deg); /* No rotation at the start */
+			filter: hue-rotate(0deg); No rotation at the start 
 		}
 		100% {
-			filter: hue-rotate(360deg); /* Full rotation at the end */
+			filter: hue-rotate(360deg); Full rotation at the end 
 		}
 	}
-
-.smaller-image {
-	width: 12vw;
-	height: auto;
-}
-
-.large-image {
-	min-width: 200px;
-	width: 20vw;
-	height: auto;
-}
-
-.logo-large {
-	width: 5vw;
-	height: auto;
-}
-
-.logo {
-	width: 2vw;
-	height: auto;
-}
-
-.indent {
-	padding-left: 20px;
-}
-
-body {
-	font-family: "Pixelmax";
-	font-weight: 0;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	background-color: black;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	color: rgb(var(--white));
-	font-size: 25px;
-	line-height: 1.7;
-}
-@media (max-width: 768px) {
-	body {
-		font-family: monospace;
-	}
-}
-main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
-}
-
-.stick {
-	position: sticky;
-	top: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--accent));
-	line-height: 1.2;
-}
-h1 {
-	font-size: 3.052em;
-	text-align: center;
-}
-h2 {
-	font-size: 2.441em;
-}
-h3 {
-	font-size: 1.953em;
-}
-h4 {
-	font-size: 1.563em;
-}
-h5 {
-	font-size: 1.25em;
-}
-strong,
-b {
-	font-weight: 700;
-}
-a {
-	color: var(--accent);
-}
-a:hover {
-	color: var(--accent);
-}
-
-p {
-	background: linear-gradient(var(--accent-gradient)); /* Gradient from pink to dark purple */
-	-webkit-background-clip: text;  /* Clips the gradient to the text */
-	color: transparent;  /* Makes the actual text color transparent so the background gradient shows through */
-	margin-bottom: 1em;
-}
-
-.white-text {
-	background: white; /* Gradient from pink to dark purple */
-	-webkit-background-clip: text;  /* Clips the gradient to the text */
-	color: transparent;  /* Makes the actual text color transparent so the background gradient shows through */
-	margin-bottom: 1em;
-}
-
-.accent-text {
-	background: linear-gradient(var(--accent-gradient)); /* Gradient from pink to dark purple */
-	-webkit-background-clip: text;  /* Clips the gradient to the text */
-	color: transparent;  /* Makes the actual text color transparent so the background gradient shows through */
-	margin-bottom: 1em;
-}
-
-.prose p {
-	margin-bottom: 2em;
-}
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
-}
-table {
-	width: 100%;
-}
-img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
-}
-
-.ItemTitle {
-	font-family: '3Dkirieji', monospace;
-	font-weight: lighter;
-	background-color: transparent;
-	padding: 2px 5px;
-	color: white;
-	border-radius: 2px;
-}
-
-code {
-	font-family: "Pixelmax", monospace;
-	font-weight: lighter;
-	background-color: rgb(var(--accent));
-	padding: 2px 5px;
-	color: white;
-	border-radius: 2px;
-}
-pre {
-	padding: 1.5em;
-	border-radius: 8px;
-}
-pre > code {
-	all: unset;
-}
-blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0px;
-	font-size: 1.333em;
-}
-hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
-}
-
-
-.sr-only {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
-	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
-	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
-	white-space: nowrap;
-}
+**/

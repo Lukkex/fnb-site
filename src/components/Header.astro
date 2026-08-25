@@ -14,20 +14,13 @@ import SiteLogo from "./logos/SiteLogo.astro";
 			<h2><a href="/"><SiteLogo/></a></h2>
 		</div>
 		<div class = "desktop">
-			<div class = "middle">
+			<div class = "right">
 				<div class="internal-links">
 					<HeaderLink href="/">Home</HeaderLink>
 					<HeaderLink href="/videos">Join</HeaderLink>
 					<HeaderLink href="/about">Donate</HeaderLink>
 					<HeaderLink href="/journal">About</HeaderLink>
 				</div>
-			</div>
-		</div>
-		<div class = "right">
-			<div class="social-links">
-				<a target="_blank" href="https://lone.earth/w/p/exPgMzAPdwpxfcd9WiMWdk">
-					<SiteLogo/>
-				</a>
 			</div>
 		</div>
 	</nav>
@@ -67,40 +60,6 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	}
 
 	header {
-		margin: 0;
-		padding: 0 1em;
-		background-image: linear-gradient(var(--black-gradient));
-		border: 1px solid rgba(255, 255, 255, 0.137);
-		border-bottom-left-radius: 3vw;
-		border-bottom-right-radius: 3vw;
-		box-shadow: 10px 10px 20px rgba(var(--black), 100%);
-		z-index: 20;
-	}
-
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	nav a {
-		padding: 0.3em 0.25vw;
-		font-size: 1.3vw;
-		font-family: '3Dkirieji', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		color: var(--white);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-		transition: text-shadow 0.3s ease-in-out;
 	}
 
 	nav a:hover {
@@ -115,7 +74,6 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 	/* Styles for phones */
 	@media only screen and (max-width: 685px) {
-		/* Mobile-specific styles :3 */
 		.mobile-logo {
 			display:flex;
 			padding-top: 45px;
@@ -130,79 +88,6 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		.mobile {
 			display: contents;
 		}
-
-		.left {
-			flex: 0;
-			width: 1/8vw
-			display: flex;
-			align-items: left;
-			justify-content: left;
-			transform: translateX(-20px);
-		}
-
-		.middle {
-			flex: 1;
-			padding-top: 0px;
-			width: 100vw;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.right {
-			flex: 0;
-			width: 1/8vw
-		}
-
-		.right div {
-			display: none;
-		}
-
-		nav {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
-
-		nav a {
-		padding: 1em 0.15em;
-		font-size: 2.5vw;
-		font-weight: 800;
-		font-family: 'PixelPurl', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		color: var(--white);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-		}
-
-		nav .middle {
-			border-radius: 10px;
-			padding-left: 1em;
-			padding-right: 1em;
-		}
-
-		h2 {
-			display: none;
-		}
-
-		.social-links {
-			display: none;
-		}
-
-		header {
-		margin: 0;
-		padding: 0 1em;
-		background-image: linear-gradient(var(--black-gradient));
-		border: 1px solid rgba(255, 255, 255, 0.336);
-		border-top: none;
-		border-bottom-left-radius: 8vw;
-		border-bottom-right-radius: 8vw;
-		box-shadow: 10px 10px 20px rgba(var(--black), 100%);
-		z-index: 2;
-	}
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
 	}
 
 </style>
