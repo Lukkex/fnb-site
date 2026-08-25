@@ -29,10 +29,11 @@
 
 /** Trans Theme
 
-	--accent: #ff9bfa;
+	--accent: #eda3b2;
 	--accent-mid: #ffffff;
-	--accent-dark: #73e8ff;
-	--background: #ffffff;
+	--accent-dark: #59c9f3;
+	--accent-text: #ffffff;
+	--background: #000000;
 
 	--white: 255, 255, 255;
 
@@ -46,9 +47,9 @@
 **/
 
 :root {
-	--accent: #ff9bfa;
+	--accent: #eda3b2;
 	--accent-mid: #ffffff;
-	--accent-dark: #73e8ff;
+	--accent-dark: #59c9f3;
 	--accent-text: #ffffff;
 	--background: #000000;
 
