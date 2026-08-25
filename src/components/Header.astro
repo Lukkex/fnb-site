@@ -6,12 +6,9 @@ import SiteLogo from "./logos/SiteLogo.astro";
 ---
 
 <header class="stick">
-	<div class="mobile-logo centered">
-		<a href="/"><SiteLogo width="230"/></a>
-	</div>
 	<nav>
 		<!-- LEFT SECTION -->
-		<div class="left desktop">
+		<div class="left">
 			<h2><a href="/"><SiteLogo/></a></h2>
 		</div>
 
@@ -24,15 +21,9 @@ import SiteLogo from "./logos/SiteLogo.astro";
 				<h2>Sacramento</h2>
 			</div>
 		</div>
-		<div class="internal-links middle mobile">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/join">Join</HeaderLink>
-			<HeaderLink href="/donate">Donate</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
 
 		<!-- RIGHT SECTION -->
-		<div class="right desktop internal-links">
+		<div class="right internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/join">Join</HeaderLink>
 			<HeaderLink href="/donate">Donate</HeaderLink>
@@ -41,15 +32,24 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	</nav>
 </header>
 <style>
+	.logo {
+        min-width: 50px;
+        width: 25vw;
+        height: auto;
+    }
+
 	h1, h2 {
 		font-size: 4vw;
-		color: white; 
   		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	}
 
 	.internal-links {
 		display: flex;
 		column-gap: 20px;
+	}
+
+	.internal-links p {
+		color: white; 
 	}
 
 	.mobile-logo {
