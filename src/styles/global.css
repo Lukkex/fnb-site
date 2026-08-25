@@ -49,6 +49,7 @@
 :root {
 	--accent: #eda3b2;
 	--accent-mid: #ffffff;
+	--accent-light: #efdee1;
 	--accent-dark: #59c9f3;
 	--accent-text: #ffffff;
 	--background: #000000;
@@ -86,7 +87,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background-image: url("./trans-bg5.png"); 
+	background-color: var(--accent-light);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--accent-text));
