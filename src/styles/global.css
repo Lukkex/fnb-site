@@ -86,7 +86,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background-color: var(--background);
+	background-image: url("./trans-bg5.png"); 
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--accent-text));
@@ -139,6 +139,16 @@ h5 {
 }
 
 /** END OF HEADERS **/
+
+.black-bordered {
+	background: black;
+	border: 1px solid rgba(255, 255, 255, 0.137);
+	border-top-left-radius: 1vw;
+	border-top-right-radius: 1vw;
+	border-bottom-left-radius: 1vw;
+	border-bottom-right-radius: 1vw;
+	box-shadow: 10px 10px 20px rgba(var(--black), 100%);
+}
 
 .svg {
 	min-width: 50px;
