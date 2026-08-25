@@ -2,38 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	/** 
-	Purple / Green Theme 
+/** Purple / Green Theme 
 
 	--accent: #f06dff;
 	--accent-dark: #5a006a;
 
-	**/
+**/
 
-	/** 
-	Black / White Theme 
-	
-	--accent: #ffffff;
-	--accent-dark: #ffffff;
-	
-	**/
+/** Black / White Theme 
 
 	--accent: #ffffff;
 	--accent-dark: #ffffff;
 	--background: #000000;
-	--lime-green: 146, 252, 26; 
-	--black: 0, 0, 0;
-	--black2: 12, 12, 12;
+
 	--white: 255, 255, 255;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--accent-gradient: rgba(var(--accent), 100%), #d880c2;
-	--theme-gradient: rgba(var(--accent), 100%), #d880c2;
-	--lime-green-gradient: rgba(var(--lime-green), 100%), #79cf16;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--black-gradient: rgba(var(--black), 100%), rgb(3, 2, 2);
+
+	--accent-gradient: rgba(var(--accent), 100%), #ffffff;
+	--theme-gradient: rgba(var(--accent), 100%), #ffffff;
+
+	--box-shadow:
+		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+		0 16px 32px rgba(var(--gray), 33%);
+
+**/
+
+/** Trans Theme
+
+--accent
+
+**/
+
+:root {
+	--accent: #ff9bfa;
+	--accent-mid: #ffffff;
+	--accent-dark: #73e8ff;
+	--background: #000000;
+
+	--white: 255, 255, 255;
+
+	--accent-gradient: var(--accent), var(--accent-mid), var(--accent-dark);
+	--theme-gradient: rgba(var(--accent), 100%), #ffffff;
+
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
@@ -116,10 +125,17 @@ h5 {
 
 /** END OF HEADERS **/
 
+.accent-text {
+    background: linear-gradient(var(--accent-gradient));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .centered {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 strong, b {
