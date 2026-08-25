@@ -39,6 +39,11 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	</nav>
 </header>
 <style>
+	h1, h2 {
+		color: white; 
+  		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+
 	.internal-links {
 		display: flex;
 		column-gap: 20px;
@@ -66,7 +71,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	}
 
 	.middle {
-		flex: 1;
+		flex: 2;
 		align-items: center;
 		justify-content: center;
 	}
@@ -83,7 +88,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background-image: linear-gradient(var(--theme-gradient));
+		background-image: linear-gradient(var(--accent-gradient));
 		border: 1px solid rgba(255, 255, 255, 0.137);
 		border-bottom-left-radius: 3vw;
 		border-bottom-right-radius: 3vw;
