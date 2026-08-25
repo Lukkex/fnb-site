@@ -151,6 +151,16 @@ h5 {
 	box-shadow: 10px 10px 20px rgba(var(--black), 100%);
 }
 
+.black-bordered-rounded {
+	background: black;
+	border: 1px solid rgba(255, 255, 255, 0.137);
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	box-shadow: 10px 10px 20px rgba(var(--black), 100%);
+}
+
 .svg {
 	min-width: 50px;
 	width: 6vw;
