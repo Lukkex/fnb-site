@@ -30,6 +30,7 @@
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
 	--accent-gradient: rgba(var(--accent), 100%), #d880c2;
+	--theme-gradient: rgba(var(--accent), 100%), #d880c2;
 	--lime-green-gradient: rgba(var(--lime-green), 100%), #79cf16;
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--black-gradient: rgba(var(--black), 100%), rgb(3, 2, 2);
