@@ -141,6 +141,19 @@ h5 {
 
 /** END OF HEADERS **/
 
+p, a, button {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 0;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color: rgb(var(--accent-text));
+	font-size: 25px;
+	line-height: 1.7;
+}
+
 .black-bordered {
 	background: black;
 	border: 1px solid rgba(255, 255, 255, 0.137);
@@ -163,7 +176,7 @@ h5 {
 
 .svg {
 	min-width: 50px;
-	width: 6vw;
+	width: 7vw;
 	height: auto;
 }
 
