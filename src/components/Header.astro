@@ -20,11 +20,24 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		</div>
 
 		<!-- RIGHT SECTION -->
-		<div class="right internal-links">
+		<div class="right internal-links desktop">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/join">Join</HeaderLink>
 			<HeaderLink href="/donate">Donate</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
+		</div>
+
+		<!-- MOBILE DROPDOWN MENU -->
+		<div class="mobile">
+			<div class="right internal-links dropdown">
+				<button class="dropbtn">Menu</button>
+				<div class="dropdown-content">
+					<HeaderLink href="/">Home</HeaderLink>
+					<HeaderLink href="/join">Join</HeaderLink>
+					<HeaderLink href="/donate">Donate</HeaderLink>
+					<HeaderLink href="/about">About</HeaderLink>
+				</div>
+			</div>
 		</div>
 	</nav>
 </header>
@@ -65,7 +78,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 	.mobile{
 		display: none;
-	}
+	} 
 
 	.desktop{ 
 	}
@@ -140,10 +153,64 @@ import SiteLogo from "./logos/SiteLogo.astro";
 			display: contents;
 		}
 
+		.dropbtn {
+			display: contents;
+			text-align: center;
+		}
+
+		.dropdown {
+			display: contents;
+		}
+
 		a {
 			font-size: 4vw;
 			font-weight: bold;
 		}
+
+		/** DROPDOWN MENU **/
+		/* Dropdown Button */
+		.dropbtn {
+		background-color: #ffffff;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		}
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+		position: relative;
+		display: inline-block;
+		}
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #ddd;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block;}
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {background-color: #3e8e41;} 
+
+		/** END OF DROPDOWN MENU **/
 	}
 
 </style>
