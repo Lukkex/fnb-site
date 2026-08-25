@@ -6,17 +6,17 @@ import SiteLogo from "./logos/SiteLogo.astro";
 ---
 
 <header class="stick">
-	<div class="mobile-logo centering-container">
-		<a href="/"><img src={""} width="230"/></a>
+	<div class="mobile-logo centered">
+		<a href="/"><SiteLogo width="230"/></a>
 	</div>
 	<nav>
 		<!-- LEFT SECTION -->
-		<div class = "left">
+		<div class="left desktop">
 			<h2><a href="/"><SiteLogo/></a></h2>
 		</div>
 
 		<!-- CENTER SECTION -->
-		<div class="middle">
+		<div class="middle desktop">
 			<div class="centered">
 				<h1>Food Not Bombs</h1>
 			</div>	
@@ -24,22 +24,25 @@ import SiteLogo from "./logos/SiteLogo.astro";
 				<h2>Sacramento</h2>
 			</div>
 		</div>
+		<div class="internal-links middle mobile">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/join">Join</HeaderLink>
+			<HeaderLink href="/donate">Donate</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+		</div>
 
 		<!-- RIGHT SECTION -->
-		<div class = "desktop">
-			<div class = "right">
-				<div class="internal-links">
-					<HeaderLink href="/">Home</HeaderLink>
-					<HeaderLink href="/join">Join</HeaderLink>
-					<HeaderLink href="/donate">Donate</HeaderLink>
-					<HeaderLink href="/about">About</HeaderLink>
-				</div>
-			</div>
+		<div class="right desktop internal-links">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/join">Join</HeaderLink>
+			<HeaderLink href="/donate">Donate</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
 		</div>
 	</nav>
 </header>
 <style>
 	h1, h2 {
+		font-size: 4vw;
 		color: white; 
   		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	}
@@ -57,8 +60,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		display: none;
 	}
 
-	.desktop{
-		display: contents;
+	.desktop{ 
 	}
 
 	.left {
@@ -88,7 +90,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background-image: linear-gradient(var(--accent-gradient));
+		background-image: linear-gradient(var(--theme-gradient));
 		border: 1px solid rgba(255, 255, 255, 0.137);
 		border-bottom-left-radius: 3vw;
 		border-bottom-right-radius: 3vw;

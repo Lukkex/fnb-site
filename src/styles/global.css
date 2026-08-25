@@ -12,12 +12,13 @@
 /** Black / White Theme 
 
 	--accent: #ffffff;
+	--accent-mid: #ffffff;
 	--accent-dark: #ffffff;
 	--background: #000000;
 
 	--white: 255, 255, 255;
 
-	--accent-gradient: rgba(var(--accent), 100%), #ffffff;
+	--accent-gradient: var(--accent), var(--accent-mid), var(--accent-dark);
 	--theme-gradient: rgba(var(--accent), 100%), #ffffff;
 
 	--box-shadow:
@@ -28,7 +29,19 @@
 
 /** Trans Theme
 
---accent
+	--accent: #ff9bfa;
+	--accent-mid: #ffffff;
+	--accent-dark: #73e8ff;
+	--background: #ffffff;
+
+	--white: 255, 255, 255;
+
+	--accent-gradient: var(--accent), var(--accent-mid), var(--accent-dark);
+	--theme-gradient: rgba(var(--accent), 100%), #ffffff;
+
+	--box-shadow:
+		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+		0 16px 32px rgba(var(--gray), 33%);
 
 **/
 
