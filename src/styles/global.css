@@ -3,9 +3,25 @@
 @tailwind utilities;
 
 :root {
+	/** 
+	Purple / Green Theme 
+
 	--accent: #f06dff;
 	--accent-dark: #5a006a;
-	--background: #ffffff;
+
+	**/
+
+	/** 
+	Black / White Theme 
+	
+	--accent: #ffffff;
+	--accent-dark: #ffffff;
+	
+	**/
+
+	--accent: #ffffff;
+	--accent-dark: #ffffff;
+	--background: #000000;
 	--lime-green: 146, 252, 26; 
 	--black: 0, 0, 0;
 	--black2: 12, 12, 12;
@@ -99,9 +115,13 @@ h5 {
 
 /** END OF HEADERS **/
 
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-strong,
-b {
+strong, b {
 	font-weight: 700;
 }
 
