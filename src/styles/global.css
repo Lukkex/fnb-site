@@ -48,9 +48,10 @@
 
 :root {
 	--accent: #eda3b2;
-	--accent-mid: #ffffff;
 	--accent-light: #efdee1;
+	--accent-mid: #ffffff;
 	--accent-dark: #59c9f3;
+	--accent-dark-light: #000000;
 	--accent-text: #ffffff;
 	--background: #000000;
 
@@ -88,6 +89,10 @@ body {
 	padding: 0;
 	text-align: left;
 	background-color: var(--accent-light);
+	background-image: url("./src/styles/translargebg2.jpg");
+	background-position: top;
+	background-size: cover;
+	backdrop-filter: blur(30px);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--accent-text));
@@ -143,20 +148,21 @@ h5 {
 
 p, a, button {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: 0;
+	font-weight: bolder;
 	margin: 0;
 	padding: 0;
 	text-align: left;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--accent-text));
+	-webkit-text-stroke: 0.8px #000;
 	font-size: 25px;
 	line-height: 1.7;
 }
 
 .black-bordered {
-	background: black;
-	border: 1px solid rgba(255, 255, 255, 0.137);
+	background: var(--accent-dark-light);
+	border: 1px solid rgb(0, 0, 0);
 	border-top-left-radius: 1vw;
 	border-top-right-radius: 1vw;
 	border-bottom-left-radius: 1vw;
@@ -165,8 +171,9 @@ p, a, button {
 }
 
 .black-bordered-rounded {
-	background: black;
-	border: 1px solid rgba(255, 255, 255, 0.137);
+	background: var(--accent-dark-light);
+	padding: 0.5em;
+	border: 2px solid rgb(0, 0, 0);
 	border-top-left-radius: 1em;
 	border-top-right-radius: 1em;
 	border-bottom-left-radius: 1em;
