@@ -89,7 +89,7 @@ body {
 	padding: 0;
 	text-align: left;
 	background-color: var(--accent-light);
-	background-image: url("./src/styles/translargebg.jpg");
+	background-image: url("./src/styles/translargebg.jpg"); 
 	background-position: top;
 	background-size: cover;
 	backdrop-filter: blur(10px);
