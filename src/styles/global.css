@@ -92,7 +92,7 @@ body {
 	background-image: url("./src/styles/translargebg.jpg"); 
 	background-position: top;
 	background-size: cover;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(15px);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--accent-text));
@@ -146,7 +146,7 @@ h5 {
 
 /** END OF HEADERS **/
 
-p, a, button {
+h1, h2, p, a, button {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: bolder;
 	margin: 0;
@@ -154,8 +154,8 @@ p, a, button {
 	text-align: left;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--accent-text));
-	-webkit-text-stroke: 0.8px #000;
+	color: rgb(var(--accent-text)); 
+	-webkit-text-stroke: 0.3px #000000;
 	font-size: 25px;
 	line-height: 1.7;
 }
