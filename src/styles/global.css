@@ -89,10 +89,10 @@ body {
 	padding: 0;
 	text-align: left;
 	background-color: var(--accent-light);
-	background-image: url("./src/styles/translargebg2.jpg");
+	background-image: url("./src/styles/translargebg.jpg");
 	background-position: top;
 	background-size: cover;
-	backdrop-filter: blur(30px);
+	backdrop-filter: blur(10px);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--accent-text));
