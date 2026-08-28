@@ -24,8 +24,8 @@ import SiteLogo from "./logos/SiteLogo.astro";
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/join">Join</HeaderLink>
 			<HeaderLink href="/donate">Donate</HeaderLink>
-			<HeaderLink class="dropbtn" href="/about">About</HeaderLink>
 			<div class="dropdown">
+			<HeaderLink class="dropbtn" href="/about">About</HeaderLink>
 				<div class="dropdown-content">
 					<HeaderLink href="/">Home</HeaderLink>
 					<HeaderLink href="/join">Join</HeaderLink>
@@ -165,6 +165,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		padding: 12px 16px;
 		background-color: #f1f1f1;
 		text-decoration: none; 
+		display: none;
 	}
 
 	/* Change color of dropdown links on hover */
@@ -172,12 +173,12 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		background-color: #ddd;
 	}
 	
-	.dropbtn:hover .dropdown-content {
+	.dropbtn:hover .dropdown-content, .dropbtn:hover .dropdown-content a {
 		display: block;
 	}
 
 	/* Show the dropdown menu on hover */
-	.dropdown:hover .dropdown-content {
+	.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content a {
 		display: block;
 	}
 

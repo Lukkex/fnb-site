@@ -1,5 +1,6 @@
 ---
 import SiteLogo from "./logos/SiteLogo.astro";
+import InstaLogo from "./logos/instagram.svg";
 
 const today = new Date();
 ---
@@ -7,10 +8,11 @@ const today = new Date();
 <footer>
 	&copy; {today.getFullYear()} Food Not Bombs of Sacramento, All rights reserved.
 	<br>
+	<br/>
 	<div class="social-links">
 		<a target="_blank" href="https://www.instagram.com/sacfoodnotbombs/">
-			<span class="sr-only">Follow our Instagram page</span>
-			<SiteLogo/>
+			<span class="sr-only">Follow our Instagram page</span> 
+			<InstaLogo style="width: 50px; height: auto;"/>
 		</a>
 	</div>
 </footer>
