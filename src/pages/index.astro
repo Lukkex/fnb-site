@@ -6,10 +6,14 @@ import PageLayout from "../layouts/Page.astro";
 	main {
 		max-width: 700px;
 	}
+
+	.welcome-text { 
+		width: 500px;
+	}
 </style>
-<PageLayout> 
-	<div class="centered" style="display: flex;">
-		<div class="black-bordered-rounded" style="width: 500px;" >
+<PageLayout class="centered"> 
+	<div class="centered-flex">
+		<div class="black-bordered-rounded welcome-text" >
 			<p class="accent-text centered">
 				Welcome to the 
 				<br>

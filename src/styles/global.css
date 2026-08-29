@@ -67,6 +67,19 @@
 
 /** FONTS **/
 
+@font-face {
+	font-family: 'HussarMilosc';
+	src: url('/fonts/HussarMilosc.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+.hussar-font {
+	font-family: 'HussarMilosc', monospace;
+	font-style: normal;
+	font-display: swap;
+}
 
 /** END OF FONTS **/
 
@@ -82,9 +95,7 @@
 
 /** BODY & MAIN **/
 
-body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: 0;
+body {  
 	margin: 0;
 	padding: 0;
 	text-align: left; 
@@ -145,7 +156,7 @@ h5 {
 
 /** END OF HEADERS **/
 
-h1, h2, p, a, button {
+p, a, button {
 	font-family: Verdana, Geneva, Tahoma, sans-serif; 
 	margin: 0;
 	padding: 0;
@@ -191,6 +202,13 @@ h1, h2, p, a, button {
 }
 
 .centered {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.centered-flex {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
