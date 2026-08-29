@@ -3,12 +3,15 @@ import PageLayout from "../layouts/Page.astro";
 ---
 
 <style>
-	main {
-		max-width: 700px;
+	.welcome-box {
+		max-width: 900px;
+		padding: 0.7em;
 	}
 
 	.welcome-text { 
-		width: 800px;
+		min-width: 300px; 
+		width: 100%;
+		font-weight: bold;
 	}
 
 	.welcome-image {
@@ -21,7 +24,7 @@ import PageLayout from "../layouts/Page.astro";
 </style>
 <PageLayout> 
 	<div class="centered-flex">
-		<div class="black-bordered-rounded welcome-text" >
+		<div class=" black-bordered-rounded welcome-box">
 			<p class="centered accent-text welcome-text">
 				Welcome to the official site of Sacramento's Food Not Bombs Distro!
 			</p>
