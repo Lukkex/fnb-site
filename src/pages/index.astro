@@ -8,27 +8,30 @@ import PageLayout from "../layouts/Page.astro";
 	}
 
 	.welcome-text { 
+		width: 800px;
+	}
+
+	.welcome-image {
 		width: 500px;
 	}
+
+	p {
+		width: 700px;
+	}
 </style>
-<PageLayout class="centered"> 
+<PageLayout> 
 	<div class="centered-flex">
 		<div class="black-bordered-rounded welcome-text" >
-			<p class="accent-text centered">
-				Welcome to the 
-				<br>
-				Official site of Sacramento's 
-				<br>
-				Food Not Bombs Distro.
+			<p class="centered accent-text welcome-text">
+				Welcome to the official site of Sacramento's Food Not Bombs Distro!
 			</p>
 		</div>
 	</div>
-	
-	<br/>
+	 
 	<br/>
 
 	<div class="centered">
-		<img src="./src/components/sacfnb_no_outline.png"/>
+		<img class="welcome-image" src="./src/components/sacfnb_no_outline.png"/>
 		<br/>
 		<br/>
 		<div class="centered" style="display: flex;">
