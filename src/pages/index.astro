@@ -2,8 +2,14 @@
 import PageLayout from "../layouts/Page.astro";
 ---
 
+<style>
+	main {
+		max-width: 700px;
+	}
+</style>
 <PageLayout>
-	<div class="centered">
+	<br/>
+	<div class="centered" style="display: flex;">
 		<div class="black-bordered-rounded" style="width: 500px;" >
 			<p class="accent-text centered">
 				Welcome to the 
@@ -13,12 +19,19 @@ import PageLayout from "../layouts/Page.astro";
 				Food Not Bombs Distro.
 			</p>
 		</div>
-		<img src="./src/components/sacfnb_no_outline.png"/>
 	</div>
-
+	
+	<br/>
 	<br/>
 
 	<div class="centered">
-		
+		<img src="./src/components/sacfnb_no_outline.png"/>
+		<br/>
+		<br/>
+		<div class="centered" style="display: flex;">
+		<p class="">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		</div>
 	</div>
 </PageLayout>
