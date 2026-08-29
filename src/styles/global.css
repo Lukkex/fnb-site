@@ -193,7 +193,6 @@ h1, h2, p, a, button {
 }
 
 .centered {
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
