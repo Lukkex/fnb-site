@@ -191,8 +191,8 @@ p, a, button {
 
 .svg {
 	min-width: 50px;
-	width: 3vw;
-	height: auto;
+	width: 5vw;
+	height: 1.6em;
 }
 
 .accent-text {
