@@ -7,15 +7,17 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 <header class="stick">
 	<nav>
-
+		<!-- LEFT SECTION -->
 		<div class="left">
 			<a href="/"><SiteLogo/></a>
 		</div>
+
+		<!-- MIDDLE SECTION -->
 		<div class="middle">
-			<div class="centered">
-				<h2 class="centered accent-text hussar-font">SACRAMENTO FOOD NOT BOMBS</h2>
-			</div>	
+			<h2 class="centered accent-text hussar-font">SACRAMENTO FOOD NOT BOMBS</h2>
 		</div>
+
+		<!-- RIGHT SECTION -->
 		<div class="right internal-links desktop">
 			<div>
 				<HeaderLink href="/">Home</HeaderLink>
@@ -37,48 +39,6 @@ import SiteLogo from "./logos/SiteLogo.astro";
 			</div>
 		</div>
 
-
-		<!--
-		<-- LEFT SECTION ->
-		<div class="left">
-			<h2><a href="/"><SiteLogo/></a></h2>
-		</div>
-
-		<-- CENTER SECTION ->
-		<div class="middle desktop">
-			<div class="centered">
-				<h2 class="centered accent-text hussar-font">SACRAMENTO FOOD NOT BOMBS</h2>
-			</div>	
-		</div>
-		<div class="middle mobile">
-			<div class="centered">
-				<h2 class="centered accent-text hussar-font">SAC FOOD NOT BOMBS</h2>
-			</div>	
-		</div>
-
-		<-- RIGHT SECTION ->
-		<div class="right internal-links desktop">
-			<div>
-				<HeaderLink href="/">Home</HeaderLink>
-			</div>
-			<div>
-				<HeaderLink href="/join">Join</HeaderLink>
-			</div>
-			<div>
-				<HeaderLink href="/donate">Donate</HeaderLink>
-			</div>
-			<div class="dropdown">
-				<HeaderLink class="dropbtn" href="/about">About</HeaderLink>
-				<div class="dropdown-content">
-					<HeaderLink href="/">Home</HeaderLink>
-					<HeaderLink href="/join">Join</HeaderLink>
-					<HeaderLink href="/donate">Donate</HeaderLink>
-					<HeaderLink href="/about">About</HeaderLink>
-				</div>
-			</div>
-		</div>
-
-		<-- MOBILE DROPDOWN MENU ->
 		<div class="mobile">
 			<div class="dropdown">
 				<button class="dropbtn">☰</button>
@@ -91,7 +51,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 					<HeaderLink href="/our-people">Our People</HeaderLink>
 				</div>
 			</div>
-		</div>-->
+		</div>
 	</nav>
 </header>
 <style>
