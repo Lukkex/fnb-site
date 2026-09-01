@@ -189,12 +189,6 @@ p, a, button {
 	box-shadow: 10px 10px 20px rgba(var(--black), 100%);
 }
 
-.svg {
-	min-width: 50px;
-	width: 5vw;
-	height: 1.6em;
-}
-
 .accent-text {
     background: linear-gradient(var(--accent-gradient));
     -webkit-background-clip: text;
