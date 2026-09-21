@@ -1,4 +1,19 @@
-# Food Not Bombs
+# Food Not Bombs: TO-DO
+
+- Home page;
+– about section
+– how to join
+– link to the main FNB site
+– videos?
+
+- Header component; 
+– Join; how to join, application process OR simply tell where to meet up and will be added in person 
+– ~~Media; links to and snippets from news articles, accomplishments / conflicts w FNB, impact~~ put under news section, OR, put a zines archive on the site!
+– About; About FNB / what we stand for, FAQs, The Experience detailed, Photos (get pics from B), News
+– Profiles of our People (Homeless ppl in Sac and their stories)
+– Donate (other links to Peace & Justice Center, see if equivalent local here - perhaps link to a paypal of a leader to start, or a form?)
+
+# AstroJS 
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
