@@ -7,55 +7,59 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 <header class="stick">
 	<nav>
-		<!-- LEFT SECTION -->
-		<div class="">
-			<a href="/"><SiteLogo/></a>
-		</div>
+	<!-- LEFT SECTION -->
+	<div class="">
+		<a href="/"><SiteLogo/></a>
+	</div>
 
-		<!-- MIDDLE SECTION -->
-		<div class="desktop middle">
-			<h1 class="centered accent-text hussar-font">SACRAMENTO FOOD NOT BOMBS</h1>
-		</div>
-		<div class="mobile middle">
-			<h1 class="centered accent-text hussar-font">SAC FOOD NOT BOMBS</h1>
-		</div>
+	<!-- MIDDLE SECTION -->
+	<div class="desktop middle">
+		<h1 class="centered accent-text hussar-font">SACRAMENTO FOOD NOT BOMBS</h1>
+	</div>
+	
+	<div class="mobile middle">
+		<h1 class="centered accent-text hussar-font">SAC FOOD NOT BOMBS</h1>
+	</div>
 
-		<!-- RIGHT SECTION -->
-		<div class="right internal-links desktop">
-			<div>
+	<!-- RIGHT SECTION -->
+	<div class="right internal-links desktop">
+		<div>
+			<HeaderLink href="/">Home</HeaderLink>
+		</div>
+		<div>
+			<HeaderLink href="/faqs#join">Join</HeaderLink>
+		</div>
+		<div>
+			<HeaderLink href="/donate">Donate</HeaderLink>
+		</div>
+		<div class="dropdown">
+			<HeaderLink class="dropbtn" href="/about">About</HeaderLink>
+			<div class="dropdown-content">
 				<HeaderLink href="/">Home</HeaderLink>
-			</div>
-			<div>
 				<HeaderLink href="/faqs#join">Join</HeaderLink>
-			</div>
-			<div>
 				<HeaderLink href="/donate">Donate</HeaderLink>
-			</div>
-			<div class="dropdown">
-				<HeaderLink class="dropbtn" href="/about">About</HeaderLink>
-				<div class="dropdown-content">
-					<HeaderLink href="/">Home</HeaderLink>
-					<HeaderLink href="/faqs#join">Join</HeaderLink>
-					<HeaderLink href="/donate">Donate</HeaderLink>
-					<HeaderLink href="/about">About</HeaderLink>
-				</div>
+				<HeaderLink href="/about">About</HeaderLink>
 			</div>
 		</div>
+	</div>
 
-		<div class="mobile">
-			<div class="dropdown">
-				<button class="dropbtn">☰</button>
-				<div class="dropdown-content">
-					<HeaderLink href="/">Home</HeaderLink>
-					<HeaderLink href="/faqs#join">Join</HeaderLink>
-					<HeaderLink href="/donate">Donate</HeaderLink>
-					<HeaderLink href="/about">About</HeaderLink>
-					<HeaderLink href="/faqs">FAQs</HeaderLink>
-					<HeaderLink href="/resources">Resources</HeaderLink>
-				</div>
+	<div class="mobile">
+		<div class="dropdown">
+			<button class="dropbtn">☰</button>
+			<div class="dropdown-content">
+				<HeaderLink href="/">Home</HeaderLink>
+				<HeaderLink href="/faqs#join">Join</HeaderLink>
+				<HeaderLink href="/donate">Donate</HeaderLink>
+				<HeaderLink href="/about">About</HeaderLink>
+				<HeaderLink href="/faqs">FAQs</HeaderLink>
+				<HeaderLink href="/resources">Resources</HeaderLink>
 			</div>
 		</div>
+	</div>
 	</nav>
+
+	<hr class="pride-bar" >
+	
 </header>
 <style>
 	h1 {
@@ -99,16 +103,41 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	}
 
 	header {
-		margin: 0;
-		padding: 0 1em;
-		background-image: url("./public/trans-bg2.png"); 
-		background-size: 3.7vw;
+		margin: ;
+		padding: 10 1em;
+		background-color: #1E1E1E;
 		background-position: center;
-		border: 4px solid rgba(0, 0, 0, 100);
-		border-bottom-left-radius: 3vw;
-		border-bottom-right-radius: 3vw;
+
+		border-bottom-left-radius: 0.5vw;
+		border-bottom-right-radius: 0.5vw;
 		box-shadow: 10px 10px 20px rgba(var(--black), 70%);
 		z-index: 20;
+	}
+
+	.pride-bar {
+		position: relative;
+		border: none;
+		width: 100vw;
+		margin-left: calc(-50vw + 50%);
+		height: 30px;
+		background: repeating-linear-gradient(to right, 
+											#FFFFFF, #FFFFFF 30px, 
+											#F7BCC2 30px, #F7BCC2 60px, 
+											#74C4F5 60px, #74C4F5 90px);
+	}
+
+	/* second pass overlay to darken the pride bar - sense of depth */
+	.pride-bar::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to bottom, 
+									rgba(5, 5, 5, 0.5) 10% , rgba(5, 5, 5, 0.5) 25%, 		/* top darkening */
+									rgba(0,0,0,0) 25%, rgba(0, 0, 0, 0) 85%, 				/* clear center */
+									rgba(5, 5, 5, 0.5) 85%, rgba(5, 5, 5, 0.5) 100%);		/* bottom darkening */
 	}
 
 	p {
