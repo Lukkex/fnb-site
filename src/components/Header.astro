@@ -7,55 +7,56 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 <header class="stick">
 	<nav>
-	<!-- LEFT SECTION -->
-	<div class="">
-		<a href="/"><SiteLogo/></a>
-	</div>
+		<!-- LEFT SECTION -->
+		<div class="">
+			<a class="icon" href="/"><SiteLogo/></a>
+		</div>
 
-	<!-- MIDDLE SECTION -->
-	<div class="desktop middle">
-		<h1 class="centered accent-text hussar-font">SACRAMENTO FOOD NOT BOMBS</h1>
-	</div>
-	
-	<div class="mobile middle">
-		<h1 class="centered accent-text hussar-font">SAC FOOD NOT BOMBS</h1>
-	</div>
+		<!-- MIDDLE SECTION -->
+		<div class="desktop middle">
+			<h1 class="subtitle accent-text">SACRAMENTO</h1>
+			<h1 class="title accent-text">FOOD NOT BOMBS</h1>
+		</div>
+		
+		<div class="mobile middle">
+			<h1 class="centered accent-text hussar-font">SAC FOOD NOT BOMBS</h1>
+		</div>
 
-	<!-- RIGHT SECTION -->
-	<div class="right internal-links desktop">
-		<div>
-			<HeaderLink href="/">Home</HeaderLink>
-		</div>
-		<div>
-			<HeaderLink href="/faqs#join">Join</HeaderLink>
-		</div>
-		<div>
-			<HeaderLink href="/donate">Donate</HeaderLink>
-		</div>
-		<div class="dropdown">
-			<HeaderLink class="dropbtn" href="/about">About</HeaderLink>
-			<div class="dropdown-content">
+		<!-- RIGHT SECTION -->
+		<div class="right internal-links desktop">
+			<div>
 				<HeaderLink href="/">Home</HeaderLink>
+			</div>
+			<div>
 				<HeaderLink href="/faqs#join">Join</HeaderLink>
+			</div>
+			<div>
 				<HeaderLink href="/donate">Donate</HeaderLink>
-				<HeaderLink href="/about">About</HeaderLink>
+			</div>
+			<div class="dropdown">
+				<HeaderLink class="dropbtn" href="/about">About</HeaderLink>
+				<div class="dropdown-content">
+					<HeaderLink href="/">Home</HeaderLink>
+					<HeaderLink href="/faqs#join">Join</HeaderLink>
+					<HeaderLink href="/donate">Donate</HeaderLink>
+					<HeaderLink href="/about">About</HeaderLink>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="mobile">
-		<div class="dropdown">
-			<button class="dropbtn">☰</button>
-			<div class="dropdown-content">
-				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="/faqs#join">Join</HeaderLink>
-				<HeaderLink href="/donate">Donate</HeaderLink>
-				<HeaderLink href="/about">About</HeaderLink>
-				<HeaderLink href="/faqs">FAQs</HeaderLink>
-				<HeaderLink href="/resources">Resources</HeaderLink>
+		<div class="mobile">
+			<div class="dropdown">
+				<button class="dropbtn">☰</button>
+				<div class="dropdown-content">
+					<HeaderLink href="/">Home</HeaderLink>
+					<HeaderLink href="/faqs#join">Join</HeaderLink>
+					<HeaderLink href="/donate">Donate</HeaderLink>
+					<HeaderLink href="/about">About</HeaderLink>
+					<HeaderLink href="/faqs">FAQs</HeaderLink>
+					<HeaderLink href="/resources">Resources</HeaderLink>
+				</div>
 			</div>
 		</div>
-	</div>
 	</nav>
 
 	<hr class="pride-bar" >
@@ -68,8 +69,31 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		-webkit-text-stroke: 0.1vw #000;
 	}
 
+	.title {
+		text-align: left;
+		font-size: 4vw;
+		transform: translateY(-10px);
+		padding-left: 5%;
+		
+		color: var(--accent-text);
+		font-weight: bolder;
+		font-family: 'Hussar", serif';
+		letter-spacing: 0em;
+	}
+
+	.subtitle {
+		text-align: left;
+		padding-left: 10%;
+		transform: translateY(15px);
+	}
+
 	a {
 		font-size: 2vw; 
+	}
+
+	.icon {
+		font-size: 3vw;
+		padding: 0;
 	}
 
 	.internal-links * {
@@ -93,7 +117,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 	.middle {
 		flex: 10;
-		justify-content: center;
+		justify-content: left;
 	}
 
 	.right {
@@ -103,8 +127,8 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	}
 
 	header {
-		margin: ;
-		padding: 10 1em;
+		margin: 0;
+		padding: 0 1em;
 		background-color: #1E1E1E;
 		background-position: center;
 
@@ -115,6 +139,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	}
 
 	.pride-bar {
+		transform: translateY(-20);
 		position: relative;
 		border: none;
 		width: 100vw;
