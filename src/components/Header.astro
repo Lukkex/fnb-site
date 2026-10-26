@@ -9,13 +9,15 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	<nav>
 		<!-- LEFT SECTION -->
 		<div class="">
-			<a href="/"><SiteLogo/></a>
+			<a class="icon" href="/"><SiteLogo/></a>
 		</div>
 
 		<!-- MIDDLE SECTION -->
 		<div class="desktop middle">
-			<h1 class="centered accent-text hussar-font">SACRAMENTO FOOD NOT BOMBS</h1>
+			<h1 class="subtitle accent-text">SACRAMENTO</h1>
+			<h1 class="title accent-text">FOOD NOT BOMBS</h1>
 		</div>
+		
 		<div class="mobile middle">
 			<h1 class="centered accent-text hussar-font">SAC FOOD NOT BOMBS</h1>
 		</div>
@@ -56,6 +58,9 @@ import SiteLogo from "./logos/SiteLogo.astro";
 			</div>
 		</div>
 	</nav>
+
+	<hr class="pride-bar" >
+	
 </header>
 <style>
 	h1 {
@@ -64,8 +69,31 @@ import SiteLogo from "./logos/SiteLogo.astro";
 		-webkit-text-stroke: 0.1vw #000;
 	}
 
+	.title {
+		text-align: left;
+		font-size: 4vw;
+		transform: translateY(-10px);
+		padding-left: 5%;
+		
+		color: var(--accent-text);
+		font-weight: bolder;
+		font-family: 'Hussar", serif';
+		letter-spacing: 0em;
+	}
+
+	.subtitle {
+		text-align: left;
+		padding-left: 10%;
+		transform: translateY(15px);
+	}
+
 	a {
 		font-size: 2vw; 
+	}
+
+	.icon {
+		font-size: 3vw;
+		padding: 0;
 	}
 
 	.internal-links * {
@@ -89,7 +117,7 @@ import SiteLogo from "./logos/SiteLogo.astro";
 
 	.middle {
 		flex: 10;
-		justify-content: center;
+		justify-content: left;
 	}
 
 	.right {
@@ -101,14 +129,40 @@ import SiteLogo from "./logos/SiteLogo.astro";
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background-image: url("./public/trans-bg2.png"); 
-		background-size: 3.7vw;
+		background-color: #1E1E1E;
 		background-position: center;
-		border: 4px solid rgba(0, 0, 0, 100);
-		border-bottom-left-radius: 3vw;
-		border-bottom-right-radius: 3vw;
+
+		border-bottom-left-radius: 0.5vw;
+		border-bottom-right-radius: 0.5vw;
 		box-shadow: 10px 10px 20px rgba(var(--black), 70%);
 		z-index: 20;
+	}
+
+	.pride-bar {
+		transform: translateY(-20);
+		position: relative;
+		border: none;
+		width: 100vw;
+		margin-left: calc(-50vw + 50%);
+		height: 30px;
+		background: repeating-linear-gradient(to right, 
+											#FFFFFF, #FFFFFF 30px, 
+											#F7BCC2 30px, #F7BCC2 60px, 
+											#74C4F5 60px, #74C4F5 90px);
+	}
+
+	/* second pass overlay to darken the pride bar - sense of depth */
+	.pride-bar::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to bottom, 
+									rgba(5, 5, 5, 0.5) 10% , rgba(5, 5, 5, 0.5) 25%, 		/* top darkening */
+									rgba(0,0,0,0) 25%, rgba(0, 0, 0, 0) 85%, 				/* clear center */
+									rgba(5, 5, 5, 0.5) 85%, rgba(5, 5, 5, 0.5) 100%);		/* bottom darkening */
 	}
 
 	p {
