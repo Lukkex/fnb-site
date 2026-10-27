@@ -7,7 +7,7 @@
 – videos?
 
 - Header component; 
-– Join; how to join, application process OR simply tell where to meet up and will be added in person 
+– ~~Join; how to join, application process OR simply tell where to meet up and will be added in person~~
 – ~~Media; links to and snippets from news articles, accomplishments / conflicts w FNB, impact~~ put under news section, OR, put a zines archive on the site!
 – About; About FNB / what we stand for, FAQs, The Experience detailed, Photos (get pics from B), News
 – Profiles of our People (Homeless ppl in Sac and their stories)
