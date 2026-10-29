@@ -18,10 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Remove annoying ahh Jekyll
-        run: touch dist/.nojekyll
       - name: Checkout your repository using git
         uses: actions/checkout@v7
+      - name: Remove annoying ahh Jekyll
+        run: touch dist/.nojekyll
       - name: Install, build, and upload your site
         uses: withastro/action@v6
         with:
